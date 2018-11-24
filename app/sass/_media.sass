@@ -1,0 +1,418 @@
+
+@media only screen and (max-width : 1230px)
+	.container
+		padding: 0 15px
+		
+@media only screen and (max-width : 1200px)
+	
+	h2
+		font-size: 32px
+
+	.header
+
+		&__top
+			width: 85%
+			margin-left: 15%
+
+		&__center
+			margin-left: 25%
+			width: 75%
+
+			img
+				display: none
+
+			&_list
+				padding-left: 0
+
+
+
+				li
+					position: relative
+					padding-left: 40px
+
+					&::before
+						content: ''
+						position: absolute
+						left: 0
+						top: 50%
+						width: 6px
+						height: 6px
+						transform: translate(0, -50%)
+						border-radius: 50%
+						background: #fff
+
+					&::after
+						content: ''
+						position: absolute
+						left: 0
+						top: 50%
+						width: 14px
+						height: 14px
+						transform: translate(-30%, -50%)
+						border: 1px dashed #fff
+						border-radius: 50%
+
+	.work
+		ul
+			font-size: 20px
+
+	.stock__content_sub-title
+		font-size: 15px
+
+	.info
+		padding-top: 40px
+	
+	.price__item div
+		margin-left: 15px
+
+		span
+			min-width: 145px
+
+	.slider
+		.swiper-button-prev
+			left: 40px
+		
+		.swiper-button-next
+			right: 10px
+
+	.scheme li
+		margin-bottom: 15px
+
+	.question
+		h2
+			text-align: center
+
+			&::before
+				left: 50%
+				transform: translate(-50%, 0)
+
+		&__container
+			flex-direction: column
+
+		&__content
+			text-align: center
+			margin-bottom: 30px
+
+		&__form
+			width: 100%
+
+		.form
+			div
+				max-width: 100%
+				margin-right: 15px
+
+			.btn
+				width: 100%
+	
+	.scheme
+		&__container
+			flex-wrap: wrap
+
+		img
+			display: none
+
+
+		ul, h2
+			width: 100%
+
+		li
+			position: relative
+			padding-left: 30px
+
+			&::before
+				content: ''
+				position: absolute
+				left: 0
+				top: 50%
+				transform: translate(-10%, -50%)
+				width: 7px
+				height: 7px
+				background: $title
+				border-radius: 50%
+
+			&::after
+				content: ''
+				position: absolute
+				left: 0
+				top: 50%
+				width: 15px
+				height: 15px
+				transform: translate(-30%, -50%)
+				border: 1px dashed $title
+				border-radius: 50%
+
+	.info-two__item
+		width: 23%
+		margin-bottom: 30px
+
+	.footer
+		height: 328px
+
+		&__block
+			flex-direction: column
+			justify-content: flex-start
+			align-items: flex-start
+
+			div
+				margin-bottom: 25px
+
+
+@media only screen and (max-width : 992px)
+	.header
+		background-position: center right
+
+		&__top
+			width: 100%
+			margin-left: 0
+
+			&_tel
+				a
+					font-size: 16px
+
+		&__center
+			margin-left: 0
+			width: 100%
+
+		&__form
+			justify-content: center
+
+		.btn
+			padding: 0 5px
+
+	.stock
+		padding-top: 140px
+
+		&__container
+			display: flex
+			flex-direction: column
+			text-align: center
+			align-items: center
+
+		&__content
+			width: 100%
+
+	.work
+		ul
+			width: 100%
+
+		li
+			position: relative
+			padding-left: 145px
+
+		span
+			position: absolute
+			left: 0
+			top: 0
+	
+	.info
+
+		&__list
+			justify-content: space-around
+
+		&__item
+			width: 32%
+			margin-bottom: 30px
+
+			&:last-child
+				margin-bottom: 0
+
+			br
+				display: none
+
+	.question .form
+		flex-direction: column
+		align-items: center
+
+		h2
+			margin-bottom: 20px
+
+			&::before
+				bottom: -10px
+
+		div
+			width: 60%
+			margin-bottom: 15px
+
+	.footer
+		height: 318px
+
+
+@media only screen and (max-width : 767px)
+	h2
+		font-size: 26px
+
+	.header
+		&--page
+			.header__top_place
+				display: block
+				
+		&__top_place
+			display: none
+
+		&__center
+			&_list
+				padding-left: 0
+
+			img
+				display: none
+		
+	.price
+		padding-bottom: 40px
+	
+	.work
+		padding: 40px 0
+
+		ul
+			font-size: 16px
+
+	.info
+		&__item
+			width: 45%
+
+	.problem
+		padding-bottom: 40px
+
+		&__container
+			flex-wrap: wrap
+
+		&__item
+			margin-bottom: 20px
+			padding-left: 90px
+
+			img
+				left: 0
+				transform: translate(0, -50%)
+
+		&__block
+			width: 100%
+
+		&__list
+			width: 100%
+
+	.countDiv
+		width: 25px
+
+	.countdownHolder
+		width: 100%
+
+	.slider
+		.swiper-slide
+			img
+				display: block
+				margin: 0 auto
+
+	.footer
+		.header__top_place
+			display: block
+
+	.stock__count p
+		width: 25%
+	
+	.slider, .info-two
+		h2
+			font-size: 20px
+			margin-bottom: 30px
+
+
+@media only screen and (max-width : 576px)
+	.price
+		&__sub-title
+			font-size: 14px
+
+		&__item
+			flex-direction: column
+			margin-bottom: 20px
+			text-align: center
+			padding-left: 0
+			p
+				margin-bottom: 10px
+
+			div
+				width: 100%
+				margin-left: 0
+				span
+					width: 50%
+					&::before
+						display: none
+				a
+					width: 50%
+
+	.stock__count
+		width: 100%
+
+	.countdownHolder
+		display: flex
+
+		span
+			padding: 15px
+			width: 25%
+			span
+				padding: 0
+				width: 35%
+
+		.countDiv
+			width: 10px
+			padding: 0
+
+		.digit
+			font-size: 36px
+			position: relative
+
+		.position
+			min-height: 15px
+
+	.question
+		padding: 40px 0
+
+	.work
+		li
+			align-items: center
+
+
+@media only screen and (max-width : 480px)
+	
+	.header
+		&__top
+			flex-direction: column
+			align-items: center
+
+			&_tel
+				margin-bottom: 20px
+
+		&__center
+			li
+				font-size: 14px
+
+				br
+					display: none
+
+	.countdownHolder
+		.digit
+			font-size: 30px
+
+	
+	.info
+		&__item
+			width: 100%
+
+	.question .form div
+		width: 100%
+		margin-right: 0
+
+	
+	.slider
+		padding: 40px 0
+
+		h2
+			margin-bottom: 35px
+
+	.problem__item
+		font-size: 14px
+
+
+
+@media only screen and (max-width : 400px)
+	.countdownHolder
+		span
+			span
+				width: 50%
